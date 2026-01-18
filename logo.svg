@@ -1,0 +1,14 @@
+<svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Link heart icon in white -->
+  <path d="M75 130 
+           C75 100 105 85 125 105
+           L150 130
+           C170 105 200 100 200 130
+           C200 155 180 175 150 200
+           C120 175 100 155 100 130
+           Z" fill="#FFFFFF"></path>
+  <!-- Text -->
+  <text x="150" y="260" text-anchor="middle" font-family="Poppins, sans-serif" font-size="32" font-weight="600" fill="#FFFFFF">
+    CareLink UG
+  </text>
+</svg>
