@@ -2,14 +2,16 @@
 body {
     margin: 0;
     font-family;georgia, serif;
-    background-color: #f7f7f7;
+    font-size: medium;
+    background-color: #ebe6ea;
     color: #333;
 }
+
 
 /* Header */
 header {
     background-color: #570f8a; /* CareLink purple */
-    color: white;
+    color: #white;
     padding: 10px 20px;
 }
 
@@ -32,6 +34,12 @@ header {
     height: 100px;
 }
 
+nav{
+    background-color: #570f8a;
+    overflow: hidden;
+
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -45,6 +53,8 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
+    float: right;
+    display: block;
 }
 
 nav a:hover {
@@ -166,7 +176,7 @@ footer {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .age-groups {
         flex-direction: column;
         align-items: center;
