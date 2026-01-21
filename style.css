@@ -1,18 +1,19 @@
 /* Reset & Body */
 body {
-    margin: 0;
-    font-family;georgia, serif;
-    font-size: medium;
+    margin: 0;                                                                                                                                                                                                                                                                                                                                                                                      
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
     background-color: #ebe6ea;
-    color: #333;
+    color: #e1d6d6;
 }
 
 
 /* Header */
 header {
     background-color: #570f8a; /* CareLink purple */
-    color: #white;
-    padding: 10px 20px;
+    color: white;
+    padding: 0px 20px;
+    align-items:center;
 }
 
 .header-container {
@@ -23,15 +24,18 @@ header {
     margin: 0 auto;
 }
 
-.home{
-    background: linear-gradient(
-        color
-    );
+body{
+    
     text-decoration: none;
-    color: white;
+    color: white(222, 211, 211);
     font-size: 1.5rem;
     font-weight: bold;
-    url("background.png");
+    background: linear-gradient(
+        rgba(228, 226, 226, 0.5)
+        rgba(181, 171, 171, 0.5)
+
+    ),
+    ("images/background.png");
 
 }
 
@@ -44,12 +48,6 @@ header {
 .logo img {
     width: 100px;
     height: 100px;
-}
-
-nav{
-    background-color: #570f8a;
-    overflow: hidden;
-
 }
 
 nav ul {
@@ -82,6 +80,8 @@ section {
 
 h1{
     color: #0e0313;
+    text-align: center;
+    
 }
 
 h2, h3 {
