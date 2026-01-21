@@ -2,9 +2,21 @@
 body {
     margin: 0;                                                                                                                                                                                                                                                                                                                                                                                      
     font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
-    background-color: #ebe6ea;
-    color: #e1d6d6;
+    font-size: 10px;
+    /* background-color: #ebe6ea; */
+    /* color: #e1d6d6; */
+    text-decoration: none;
+    color: white(222, 211, 211);
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: linear-gradient(
+        rgba(228, 226, 226, 0.5)
+        rgba(181, 171, 171, 0.5)
+
+    ),
+    ("images/background.png");
+
+    
 }
 
 
@@ -22,21 +34,6 @@ header {
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
-}
-
-body{
-    
-    text-decoration: none;
-    color: white(222, 211, 211);
-    font-size: 1.5rem;
-    font-weight: bold;
-    background: linear-gradient(
-        rgba(228, 226, 226, 0.5)
-        rgba(181, 171, 171, 0.5)
-
-    ),
-    ("images/background.png");
-
 }
 
 .logo {
@@ -193,4 +190,5 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+
 }   
