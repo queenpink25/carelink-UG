@@ -1,76 +1,50 @@
 /* Reset & Body */
 body {
     margin: 0;
-    font-family;georgia, serif;
-    font-size: medium;
-    background-color: #ebe6ea;
-    color: #333;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: rgb(209, 208, 212);
+    background: linear-gradient(rgba(85, 91, 110, 0.6), hsla(330, 14%, 97%, 0.6)),
+    url("images/background.png") center/cover no-repeat fixed;
 }
-
 
 /* Header */
-header {
-    background-color: #570f8a; /* CareLink purple */
-    color: #white;
-    padding: 10px 20px;
-}
 
 .header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.home{
-    background: linear-gradient(
-        color
-    );
-    text-decoration: none;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-    url("background.png");
-
+    padding: 1rem;
+    flex-wrap: wrap;
+    background-color: hsl(240, 10%, 4%);
+    height: auto;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
-}
-
-.logo img {
-    width: 100px;
-    height: 100px;
-}
-
-nav{
-    background-color: #570f8a;
-    overflow: hidden;
-
+    gap: 0.5rem;
 }
 
 nav ul {
-    list-style: none;
     display: flex;
-    gap: 30px;
-    margin: 0;
+    list-style: none;
     padding: 0;
+    margin: 0;
+    gap: 1rem;
+    background-color: #7d88a5;
 }
 
 nav a {
-    color: white;
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-    float: right;
-    display: block;
+    color: #200404;
 }
 
 nav a:hover {
-    color: #ffd700; /* Hover effect */
+    color: #dfddec;
+    font-weight: bold;
 }
 
 /* Sections */
@@ -80,41 +54,77 @@ section {
     margin: 0 auto;
 }
 
-h1{
-    color: #0e0313;
+h1 {
+    color: #ab89c4;
+    text-align: center;
+    margin: 0;
+
+    font-size: clamp(1.2rem, 4.5vw, 2.5rem);
+    line-height: 1.2;
+    /* Add padding for better spacing on narrow screens */
+    padding: 0 12px;
+    margin-bottom: 8px;
+
+    /* Prevent text from touching edges */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
-h2, h3 {
-   
-    color: #6a0dad;
+h3,
+h4 {
+    color: #000811;
 }
 
 .age-groups {
     display: flex;
     flex-wrap: wrap;
+    /* allows multiple rows */
+    justify-content: space-between;
+    /* space between cards */
     gap: 20px;
     margin-top: 20px;
 }
 
 .age-group {
-    flex: 1 1 200px;
-    text-align: center;
-    border: 1px solid #ddd;
-    padding: 15px;
+    flex: 1 1 calc(33.333% - 20px);
+    background-color: #f8f8f8;
+    padding: 20px;
     border-radius: 10px;
-    background-color: #f9f9f9;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .age-group img {
-    width: 1000px;
-    height: 1000px;
+    width: 100%;
+    height: auto;
     object-fit: cover;
-    margin-bottom: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
+.age-group h4 {
+    margin-bottom: 10px;
+    color: #3d2f84;
+    /* brand purple */
+}
+
+.age-group p {
+    font-size: 0.75rem;
+    color: #333;
+}
+
+p,
+ul {
+    color: white;
+    font-size: clamp(4.5vw, 2.5rem);
+    line-height: 1.2;
+}
 
 /* Forms */
-form input, form textarea, form select, form button {
+form input,
+form textarea,
+form select,
+form button {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -123,7 +133,7 @@ form input, form textarea, form select, form button {
 }
 
 form button {
-    background-color: #6a0dad;
+    background-color: #9c75b8;
     color: white;
     border: none;
     font-weight: bold;
@@ -134,8 +144,9 @@ form button {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #333;
+    background-color: #1d0b2a;
     color: white;
+    font-size: clamp(4.5vw, 2.5rem);
 }
 
 /* Reshare / Call-to-Action Section */
@@ -155,6 +166,7 @@ footer {
     font-size: 1rem;
     max-width: 700px;
     margin: 0 auto 20px;
+    color: #333;
 }
 
 .reshare-buttons {
@@ -166,8 +178,8 @@ footer {
 }
 
 .reshare-buttons button {
-    background-color: #6a0dad;
-    color: white;
+    background-color: #9c75b8;
+    color: #fff;
     border: none;
     padding: 12px 25px;
     border-radius: 5px;
@@ -186,11 +198,3 @@ footer {
     max-width: 700px;
     margin: 0 auto;
 }
-
-/* Responsive Design */
-@media (max-width: 900px) {
-    .age-groups {
-        flex-direction: column;
-        align-items: center;
-    }
-}   
